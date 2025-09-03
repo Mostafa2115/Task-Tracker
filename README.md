@@ -17,34 +17,13 @@ It uses **Supabase** for authentication, database, and backend services, providi
 
 ---
 
-## 📂 Project Structure
+## 🎯 Goals
 
-```bash
-task-tracker/
-├── app/
-│   ├── Http/
-│   │   ├── Controllers/
-│   │   │   ├── UserController.php
-│   │   │   └── TaskController.php
-│   │   └── Middleware/
-│   ├── Models/
-│   │   ├── User.php
-│   │   └── Task.php
-│   └── ...
-├── database/
-│   ├── migrations/
-│   ├── seeders/
-│   └── factories/
-├── resources/
-│   ├── views/
-│   │   ├── layout/
-│   │   ├── auth/
-│   │   └── tasks/
-│   └── ...
-├── routes/
-│   └── web.php
-└── ...
-```
+1. Provide a seamless task management experience.
+2. Ensure data persistence with Supabase.
+3. Create a responsive and user-friendly interface.
+4. Implement robust authentication and authorization.
+5. Facilitate easy deployment and scalability.
 
 ---
 
@@ -59,49 +38,87 @@ task-tracker/
 4. Tasks are synced in Supabase Database.
 
 ---
+
 ## 🛠️ Technologies Used
 
-1. Laravel 10 – PHP Framework
-
-2. Supabase – Auth & Database
-
-3. Blade – Templating Engine
-
-4. Tailwind CSS – Styling
-
-5. Node.js – JavaScript Runtime
-
-6. npm – Package Manager
+-   **Backend**: Laravel
+-   **Frontend**: Blade Templates, Tailwind CSS
+-   **Database & Auth**: Supabase
 
 ---
-## ⚙️ Setup and Run
 
-```bash
-# Clone the repo
-git clone https://github.com/Mostafa2115/Task-Tracker.git
-cd Task-Tracker
+## 💾 Database Schema
 
-# Install dependencies
-composer install
-npm install && npm run dev
+-   **Users Table**: Managed by Supabase Auth.
+-   **Tasks Table**: Stores task details (title, description, status).
 
-# Copy environment file
-cp .env.example .env
+---
 
-# Generate app key
-php artisan key:generate
+## 🗺️ Routing
 
-# Run migrations
-php artisan migrate
+-   **GET /**: Home page (task list).
+-   **GET /login**: Login page.
+-   **GET /register**: Registration page.
+-   **POST /tasks**: Create a new task.
+-   **PUT /tasks/{id}**: Update a task.
+-   **DELETE /tasks/{id}**: Delete a task.
 
+---
 
-# Start the development server
-php artisan serve
+## ⚙️ Controllers
 
-# Open your browser and visit
-http://localhost:8000
+-   **UserController**: Manages user authentication and profile.
+-   **TaskController**: Handles task CRUD operations.
 
-```
+---
+
+## 🚀 Project Setup
+
+1.  **Clone the repository:**
+
+    ```bash
+    git clone https://github.com/your-username/your-repository.git
+    cd your-repository
+    ```
+
+2.  **Install dependencies:**
+
+    ```bash
+    composer install
+    npm install
+    ```
+
+3.  **Environment Configuration:**
+    Create a `.env` file by copying the example file:
+
+    ```bash
+    cp .env.example .env
+    ```
+
+    Then, generate the application key:
+
+    ```bash
+    php artisan key:generate
+    ```
+
+4.  **Run Migrations:**
+
+    ```bash
+    php artisan migrate
+    ```
+
+5.  **Serve the application:**
+    In two separate terminals, run the following commands:
+    ```bash
+    npm run dev
+    ```
+    ```bash
+    php artisan serve
+    ```
+    The application will be available at `http://127.0.0.1:8000`.
+
+---
 
 ## 👨‍💻 Author
+
 Developed by [Mostafa Mahmoud](https://github.com/Mostafa2115)
