@@ -26,6 +26,10 @@ It uses **Supabase** for authentication, database, and backend services, providi
 5. Facilitate easy deployment and scalability.
 
 ---
+## Main Page
+![](storage/app/public/Main_Page.jpeg)
+
+---
 
 ## 📖 Usage
 
