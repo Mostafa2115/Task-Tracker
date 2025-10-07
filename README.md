@@ -1,16 +1,16 @@
 # 📝 Task Tracker
 
 Task Tracker is a **Laravel-based web application** that helps you manage your daily tasks efficiently.  
-It uses **Supabase** for authentication, database, and backend services, providing a modern and scalable solution.
+It uses **MySQL** for authentication, database, and backend services, providing a modern and scalable solution.
 
 ---
 
 ## 🚀 Features
 
 -   **Task Management**: Add, edit, delete, and list tasks.
--   **Supabase Integration**:
+-   **MySQL Integration**:
     -   Authentication (Sign up / Login).
-    -   Store and manage tasks in Supabase database.
+    -   Store and manage tasks in MySQL database.
 -   **Clean UI**: Built with Blade templates + Tailwind CSS.
 -   **RESTful Architecture**: Laravel routes & controllers structure.
 -   **Scalable**: Can be deployed easily on platforms like Vercel, Railway, or Laravel Forge.
@@ -20,26 +20,22 @@ It uses **Supabase** for authentication, database, and backend services, providi
 ## 🎯 Goals
 
 1. Provide a seamless task management experience.
-2. Ensure data persistence with Supabase.
+2. Ensure data persistence with MySql.
 3. Create a responsive and user-friendly interface.
 4. Implement robust authentication and authorization.
 5. Facilitate easy deployment and scalability.
 
 ---
-## Main Page
-![](storage/app/public/Main_Page.jpeg)
-
----
 
 ## 📖 Usage
 
-1. Register/Login using Supabase Auth.
+1. Register/Login using MySQL Auth.
 
 2. Create tasks with title, description, and status.
 
 3. Edit or delete tasks anytime.
 
-4. Tasks are synced in Supabase Database.
+4. Tasks are synced in MySQL Database.
 
 ---
 
@@ -47,13 +43,13 @@ It uses **Supabase** for authentication, database, and backend services, providi
 
 -   **Backend**: Laravel
 -   **Frontend**: Blade Templates, Tailwind CSS
--   **Database & Auth**: Supabase
+-   **Database & Auth**: MySQL
 
 ---
 
 ## 💾 Database Schema
 
--   **Users Table**: Managed by Supabase Auth.
+-   **Users Table**: Managed by MySQL Auth.
 -   **Tasks Table**: Stores task details (title, description, status).
 
 ---
@@ -73,6 +69,12 @@ It uses **Supabase** for authentication, database, and backend services, providi
 
 -   **UserController**: Manages user authentication and profile.
 -   **TaskController**: Handles task CRUD operations.
+
+---
+
+## 📸 Screenshots
+
+## ![Main Page](https://via.placeholder.com/800x400.png?text=Task+Tracker+Screenshot)
 
 ---
 
